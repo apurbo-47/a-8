@@ -11,7 +11,7 @@ const Banner = () => {
       >
         <div className="hero-content text-neutral-content text-center">
           <div className="">
-            <h1 className="mb-8 text-2xl md:text-4xl font-extrabold">
+            <h1 className="mb-8 text-xl md:text-4xl font-extrabold">
               It avoids subjective claims or <br /> exaggeration that might
               raise red <br /> flags legally
             </h1>

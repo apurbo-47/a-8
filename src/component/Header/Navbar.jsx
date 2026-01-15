@@ -13,13 +13,12 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />
             </svg>
           </div>
           <ul
@@ -43,7 +42,7 @@ const Navbar = () => {
         <div className="flex gap-4">
           <img
             className="w-8 h-8"
-            src="src/assets/C002-assets/success-patients.png"
+            src="src/assets/C002-assets/logo.png"
             alt=""
           />
           <a className=" text-xl font-bold text-[#0F0F0F80] md:text-3xl md:font-extrabold">
