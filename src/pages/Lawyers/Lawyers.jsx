@@ -4,12 +4,12 @@ import Lawyer from "../Lawyer/Lawyer";
 const Lawyers = ({ data }) => {
   console.log("data", data);
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="text-center">
-        <h1 className="text-4xl text-center text-[#50B1C9] font-bold p-6 mt-24 mb-12">
+    <div className="max-w-7xl mx-auto px-5 lg:px-0 space-y-8">
+      <div className="text-center space-y-4">
+        <h1 className="text-4xl font-extrabold text-[#0F0F0F]">
           Our Best Lawyers
         </h1>
-        <p className="">
+        <p className="text-[#0F0F0F]/80">
           Our platform connects you with verified, experienced Lawyers across
           various specialties — all at your convenience. Whether it's a routine
           checkup or urgent consultation, book appointments in minutes and
@@ -17,7 +17,7 @@ const Lawyers = ({ data }) => {
         </p>
       </div>
       <Suspense fallback={<span>Loading...</span>}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-16 ">
           {data?.lawyers?.map((singleLawyer, index) => (
             <Lawyer key={index} singleLawyer={singleLawyer}></Lawyer>
           ))}

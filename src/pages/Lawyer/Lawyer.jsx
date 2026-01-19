@@ -6,34 +6,29 @@ const Lawyer = ({ singleLawyer }) => {
   const { name, speciality, experience, licenseNumber, image, lawId } =
     singleLawyer;
   return (
-    <div>
+    <div className="">
       <Link to={`/lawyerDetails/${lawId}`}>
-        <div className="card shadow-lg p-6  rounded-2xl ">
-          <figure className="p-5 bg-[#F3F3F3] rounded-2xl w-2/3 mx-auto ">
-            <img className="h-[166px] rotate-6" src={image} alt="Shoes" />
+        <div className="flex shadow-lg p-6 gap-x-16  rounded-2xl ">
+          <figure className=" bg-[#F3F3F3] rounded-2xl h-[160px] w-[160px] ">
+            <img src={image} alt="Shoes" />
           </figure>
-          <div className="card-body ">
-            <div className="flex justify-center font-medium text-base bg-[#23BE0A05] text-[#23BE0A] gap-10">
-              <h3>{experience}</h3>
-            </div>
+          <div className="space-y-2">
+            <h3 className="font-medium text-base text-[#23BE0A]">
+              {experience}
+            </h3>
 
-            <h2 className="card-title justify-center text-[#131313] text-xl font-bold ">
-              {name}
-              <div className="badge badge-secondary justify-end">{}</div>
-            </h2>
+            <h2 className=" text-2xl font-extrabold text-[#0F0F0F] ">{name}</h2>
 
-            <p className="font-medium text-base text-[#13131380] text-center">
-              By : {speciality}
+            <p className="text-lg font-medium  text-[#0F0F0F]/60">
+              {speciality}
             </p>
 
-            <div className="border-t-2 border-dashed text-[#13131315] "></div>
-
-            <div className="card-actions text-[#13131380] text-base font-medium justify-center">
-              <div className="">{licenseNumber}</div>
-              <div className="badge badge-sm">
-                {} <FaStarHalfAlt />
-              </div>
-            </div>
+            <p className="text-[#0F0F0F]/70 font-medium text-base">
+              {licenseNumber}
+            </p>
+            <button className="py-2 border w-full bg-white text-[#176AE5] rounded-full">
+              View Details
+            </button>
           </div>
         </div>
       </Link>
