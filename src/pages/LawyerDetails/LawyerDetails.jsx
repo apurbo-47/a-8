@@ -6,12 +6,11 @@ const LawyerDetails = () => {
   const { id } = useParams();
   const lawId = parseInt(id);
   const data = useLoaderData();
-  const singleLawyer = data.find((lawyer) => lawyer.id === lawId);
-  const { name, image, speciality, experience, licenseNumber, detailsPath } =
-    singleLawyer;
+  const singleLawyer = data?.lawyers?.find((lawyer) => lawyer.lawId === lawId);
+  const { name, image, speciality, experience, licenseNumber } = singleLawyer;
 
-  const handleMarkAsRead = (id) => {
-    addToStoredDB(id);
+  const handleMarkAsRead = (lawId) => {
+    addToStoredDB(lawId);
   };
 
   return (
@@ -43,20 +42,16 @@ const LawyerDetails = () => {
               </span>
               {}
             </p>
-            <p>
-              <span className="text-md text-[#13131380]">Publisher : </span>{" "}
-              {detailsPath}
-            </p>
           </div>
           <div className="flex  gap-x-4 mt-6">
             <button
-              onClick={() => handleMarkAsRead(id)}
+              onClick={() => handleMarkAsRead(lawId)}
               className="btn bg-white text-black"
             >
               Read
             </button>
             <button
-              onClick={() => handleMarkAsRead(id)}
+              onClick={() => handleMarkAsRead(lawId)}
               className="btn bg-[#50B1C9] border-hidden"
             >
               Wishlist
