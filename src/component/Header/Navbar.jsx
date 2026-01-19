@@ -1,9 +1,35 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
+  const links = (
+    <>
+      <Link to="/" className="active:underline m-3 text-lg text-[#0F0F0F70]">
+        Home
+      </Link>
+      <Link
+        to="/readList"
+        className="active:underline m-3 text-lg text-[#0F0F0F70]"
+      >
+        My Bookings
+      </Link>
+      <Link
+        to="/blog"
+        className="active:underline m-3 text-lg text-[#0F0F0F70]"
+      >
+        Blogs
+      </Link>
+      <Link
+        to="/contact"
+        className="active:underline m-3 text-lg text-[#0F0F0F70]"
+      >
+        Contact Us
+      </Link>
+    </>
+  );
   return (
-    <div className="navbar bg-white text-black mt-6 mb-6">
-      <div className="navbar-start md:ml-40">
+    <div className=" p-6 max-w-7xl mx-auto navbar bg-white text-black  ">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -25,18 +51,7 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow text-lg font-medium text-[#0F0F0F70]"
           >
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>My Bookings</a>
-            </li>
-            <li>
-              <a>Blogs</a>
-            </li>
-            <li>
-              <a>Contact Us</a>
-            </li>
+            {links}
           </ul>
         </div>
         <div className="flex gap-4">
@@ -52,21 +67,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal text-lg font-medium text-[#0F0F0F70] px-1">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>My Bookings</a>
-          </li>
-          <li>
-            <a>Blogs</a>
-          </li>
-          <li>
-            <a>Contact Us</a>
-          </li>
+          {links}
         </ul>
       </div>
-      <div className="navbar-end md:mr-40">
+      <div className="navbar-end ">
         <a className="btn bg-[#0EA106] border-hidden rounded-full">
           Contact Now
         </a>

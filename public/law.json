@@ -1,0 +1,113 @@
+{
+  "initialVisibleCount": 6,
+  "lawyers": [
+    {
+      "lawId": 1,
+      "name": "Ahsan Rahman",
+      "speciality": "Criminal Law",
+      "experience": "12 Years",
+      "licenseNumber": "LAW-BD-1001",
+      "image": "/images/lawyers/ahsan-rahman.jpg",
+      "detailsPath": "/lawyers/1"
+    },
+    {
+      "lawId": 2,
+      "name": "Nusrat Jahan",
+      "speciality": "Family Law",
+      "experience": "8 Years",
+      "licenseNumber": "LAW-BD-1002",
+      "image": "/images/lawyers/nusrat-jahan.jpg",
+      "detailsPath": "/lawyers/2"
+    },
+    {
+      "lawId": 3,
+      "name": "Mahmud Hasan",
+      "speciality": "Corporate Law",
+      "experience": "10 Years",
+      "licenseNumber": "LAW-BD-1003",
+      "image": "/images/lawyers/mahmud-hasan.jpg",
+      "detailsPath": "/lawyers/3"
+    },
+    {
+      "lawId": 4,
+      "name": "Farzana Islam",
+      "speciality": "Civil Litigation",
+      "experience": "7 Years",
+      "licenseNumber": "LAW-BD-1004",
+      "image": "/images/lawyers/farzana-islam.jpg",
+      "detailsPath": "/lawyers/4"
+    },
+    {
+      "lawId": 5,
+      "name": "Shafiq Ahmed",
+      "speciality": "Property Law",
+      "experience": "15 Years",
+      "licenseNumber": "LAW-BD-1005",
+      "image": "/images/lawyers/shafiq-ahmed.jpg",
+      "detailsPath": "/lawyers/5"
+    },
+    {
+      "lawId": 6,
+      "name": "Tasnim Chowdhury",
+      "speciality": "Immigration Law",
+      "experience": "6 Years",
+      "licenseNumber": "LAW-BD-1006",
+      "image": "/images/lawyers/tasnim-chowdhury.jpg",
+      "detailsPath": "/lawyers/6"
+    },
+    {
+      "lawId": 7,
+      "name": "Rezaul Karim",
+      "speciality": "Tax Law",
+      "experience": "11 Years",
+      "licenseNumber": "LAW-BD-1007",
+      "image": "/images/lawyers/rezaul-karim.jpg",
+      "detailsPath": "/lawyers/7"
+    },
+    {
+      "lawId": 8,
+      "name": "Sadia Akter",
+      "speciality": "Human Rights Law",
+      "experience": "9 Years",
+      "licenseNumber": "LAW-BD-1008",
+      "image": "/images/lawyers/sadia-akter.jpg",
+      "detailsPath": "/lawyers/8"
+    },
+    {
+      "lawId": 9,
+      "name": "Imran Hossain",
+      "speciality": "Labour Law",
+      "experience": "13 Years",
+      "licenseNumber": "LAW-BD-1009",
+      "image": "/images/lawyers/imran-hossain.jpg",
+      "detailsPath": "/lawyers/9"
+    },
+    {
+      "lawId": 10,
+      "name": "Rumana Siddique",
+      "speciality": "Intellectual Property",
+      "experience": "5 Years",
+      "licenseNumber": "LAW-BD-1010",
+      "image": "/images/lawyers/rumana-siddique.jpg",
+      "detailsPath": "/lawyers/10"
+    },
+    {
+      "lawId": 11,
+      "name": "Kamal Uddin",
+      "speciality": "Banking Law",
+      "experience": "14 Years",
+      "licenseNumber": "LAW-BD-1011",
+      "image": "/images/lawyers/kamal-uddin.jpg",
+      "detailsPath": "/lawyers/11"
+    },
+    {
+      "lawId": 12,
+      "name": "Nabila Rahman",
+      "speciality": "Environmental Law",
+      "experience": "6 Years",
+      "licenseNumber": "LAW-BD-1012",
+      "image": "/images/lawyers/nabila-rahman.jpg",
+      "detailsPath": "/lawyers/12"
+    }
+  ]
+}

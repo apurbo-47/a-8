@@ -3,6 +3,7 @@ import { MdFacebook } from "react-icons/md";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -17,20 +18,12 @@ const Footer = () => {
           Law.BD
         </a>
       </div>
-      <div className="navbar-center md:flex justify-center mt-8 mb-8">
-        <ul className="menu menu-horizontal text-base font-medium text-[#FFFFFF70] gap-8">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>My Bookings</a>
-          </li>
-          <li>
-            <a>Blogs</a>
-          </li>
-          <li>
-            <a>Contact Us</a>
-          </li>
+      <div className="navbar-center flex justify-center mt-8 mb-8">
+        <ul className="menu menu-horizontal text-base font-medium justify-center text-[#FFFFFF70] gap-8">
+          <Link to="/">Home</Link>
+          <Link to="lawyerDetails/:id">My Bookings</Link>
+          <Link to="/blog">Blogs</Link>
+          <Link to="/contact">Contact Us</Link>
         </ul>
       </div>
 
