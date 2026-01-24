@@ -55,11 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex gap-4">
-          <img
-            className="w-8 h-8"
-            src="src/assets/C002-assets/logo.png"
-            alt=""
-          />
+          <img className="w-8 h-8" src="assets/C002-assets/logo.png" alt="" />
           <a className=" text-xl font-bold text-[#0F0F0F80] md:text-3xl md:font-extrabold">
             Law.BD
           </a>

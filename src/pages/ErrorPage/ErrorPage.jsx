@@ -7,7 +7,7 @@ const ErrorPage = () => {
       <div className="">
         <img
           className="h-[550px] w-full"
-          src="src/assets/shutterstock_1075475231.jpg"
+          src="assets/shutterstock_1075475231.jpg"
           alt=""
         />
       </div>

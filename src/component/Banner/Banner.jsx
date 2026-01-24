@@ -6,7 +6,7 @@ const Banner = () => {
       <div
         className="hero md:h-137.5 rounded-3xl "
         style={{
-          backgroundImage: "url(src/assets/C002-assets/banner-img-1.png)",
+          backgroundImage: "url(assets/C002-assets/banner-img-1.png)",
         }}
       >
         <div className="hero-content text-neutral-content text-center">

@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex gap-4 justify-center ">
         <img
           className="w-8 h-8"
-          src="src/assets/C002-assets/logo-footer.png"
+          src="assets/C002-assets/logo-footer.png"
           alt=""
         />
         <a className=" text-xl font-bold md:text-3xl md:font-extrabold">

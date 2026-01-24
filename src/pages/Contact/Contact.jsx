@@ -6,7 +6,7 @@ const Contact = () => {
     <div
       className="hero min-h-screen"
       style={{
-        backgroundImage: "url(src/assets/shutterstock_1075475231.jpg)",
+        backgroundImage: "url(assets/shutterstock_1075475231.jpg)",
       }}
     >
       <div className="hero-overlay"></div>

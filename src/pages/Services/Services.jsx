@@ -17,7 +17,7 @@ const Services = () => {
             <div className="card-body md:ml-12  ">
               <img
                 className="w-16 h-16"
-                src="src/assets/C002-assets/success-doctor.png"
+                src="assets/C002-assets/success-doctor.png"
                 alt=""
               />
 
@@ -35,7 +35,7 @@ const Services = () => {
             <div className="card-body md:ml-12  ">
               <img
                 className="w-16 h-16"
-                src="src/assets/C002-assets/success-review.png"
+                src="assets/C002-assets/success-review.png"
                 alt=""
               />
 
@@ -53,7 +53,7 @@ const Services = () => {
             <div className="card-body md:ml-12  ">
               <img
                 className="w-16 h-16"
-                src="src/assets/C002-assets/success-patients.png"
+                src="assets/C002-assets/success-patients.png"
                 alt=""
               />
 
@@ -71,7 +71,7 @@ const Services = () => {
             <div className="card-body md:ml-12 ">
               <img
                 className="w-16 h-16"
-                src="src/assets/C002-assets/success-staffs.png"
+                src="assets/C002-assets/success-staffs.png"
                 alt=""
               />
 
