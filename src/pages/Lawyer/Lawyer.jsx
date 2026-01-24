@@ -28,7 +28,7 @@ const Lawyer = ({ singleLawyer }) => {
             License No:{licenseNumber}
           </p>
           <Link to={`/lawyerDetails/${lawId}`}>
-            <button className="py-2  border w-full bg-white text-[#176AE5] rounded-full">
+            <button className="py-2  border w-full bg-white text-[#176AE5] rounded-full hover:bg-[#176AE5] hover:text-white">
               View Details
             </button>
           </Link>

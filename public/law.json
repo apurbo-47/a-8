@@ -7,6 +7,8 @@
       "speciality": "Criminal Law",
       "experience": "12 Years",
       "licenseNumber": "LAW-BD-1001",
+      "availability": "Sun - Thu (10 AM - 5 PM)",
+      "consultationFee": 1500,
       "image": "/images/lawyers/ahsan-rahman.jpg",
       "detailsPath": "/lawyers/1"
     },
@@ -16,6 +18,8 @@
       "speciality": "Family Law",
       "experience": "8 Years",
       "licenseNumber": "LAW-BD-1002",
+      "availability": "Sat - Wed (9 AM - 4 PM)",
+      "consultationFee": 1200,
       "image": "/images/lawyers/nusrat-jahan.jpg",
       "detailsPath": "/lawyers/2"
     },
@@ -25,6 +29,8 @@
       "speciality": "Corporate Law",
       "experience": "10 Years",
       "licenseNumber": "LAW-BD-1003",
+      "availability": "Sun - Thu (11 AM - 6 PM)",
+      "consultationFee": 2000,
       "image": "/images/lawyers/mahmud-hasan.jpg",
       "detailsPath": "/lawyers/3"
     },
@@ -34,6 +40,8 @@
       "speciality": "Civil Litigation",
       "experience": "7 Years",
       "licenseNumber": "LAW-BD-1004",
+      "availability": "Mon - Fri (10 AM - 3 PM)",
+      "consultationFee": 1300,
       "image": "/images/lawyers/farzana-islam.jpg",
       "detailsPath": "/lawyers/4"
     },
@@ -43,6 +51,8 @@
       "speciality": "Property Law",
       "experience": "15 Years",
       "licenseNumber": "LAW-BD-1005",
+      "availability": "Sun - Thu (9 AM - 2 PM)",
+      "consultationFee": 1800,
       "image": "/images/lawyers/shafiq-ahmed.jpg",
       "detailsPath": "/lawyers/5"
     },
@@ -52,6 +62,8 @@
       "speciality": "Immigration Law",
       "experience": "6 Years",
       "licenseNumber": "LAW-BD-1006",
+      "availability": "Tue - Sat (11 AM - 5 PM)",
+      "consultationFee": 1100,
       "image": "/images/lawyers/tasnim-chowdhury.jpg",
       "detailsPath": "/lawyers/6"
     },
@@ -61,6 +73,8 @@
       "speciality": "Tax Law",
       "experience": "11 Years",
       "licenseNumber": "LAW-BD-1007",
+      "availability": "Sun - Thu (10 AM - 4 PM)",
+      "consultationFee": 1700,
       "image": "/images/lawyers/rezaul-karim.jpg",
       "detailsPath": "/lawyers/7"
     },
@@ -70,6 +84,8 @@
       "speciality": "Human Rights Law",
       "experience": "9 Years",
       "licenseNumber": "LAW-BD-1008",
+      "availability": "Mon - Fri (12 PM - 6 PM)",
+      "consultationFee": 1400,
       "image": "/images/lawyers/sadia-akter.jpg",
       "detailsPath": "/lawyers/8"
     },
@@ -79,6 +95,8 @@
       "speciality": "Labour Law",
       "experience": "13 Years",
       "licenseNumber": "LAW-BD-1009",
+      "availability": "Sun - Thu (9 AM - 1 PM)",
+      "consultationFee": 1600,
       "image": "/images/lawyers/imran-hossain.jpg",
       "detailsPath": "/lawyers/9"
     },
@@ -88,6 +106,8 @@
       "speciality": "Intellectual Property",
       "experience": "5 Years",
       "licenseNumber": "LAW-BD-1010",
+      "availability": "Wed - Sun (10 AM - 4 PM)",
+      "consultationFee": 1250,
       "image": "/images/lawyers/rumana-siddique.jpg",
       "detailsPath": "/lawyers/10"
     },
@@ -97,6 +117,8 @@
       "speciality": "Banking Law",
       "experience": "14 Years",
       "licenseNumber": "LAW-BD-1011",
+      "availability": "Sun - Thu (11 AM - 5 PM)",
+      "consultationFee": 1900,
       "image": "/images/lawyers/kamal-uddin.jpg",
       "detailsPath": "/lawyers/11"
     },
@@ -106,6 +128,8 @@
       "speciality": "Environmental Law",
       "experience": "6 Years",
       "licenseNumber": "LAW-BD-1012",
+      "availability": "Mon - Fri (9 AM - 2 PM)",
+      "consultationFee": 1150,
       "image": "/images/lawyers/nabila-rahman.jpg",
       "detailsPath": "/lawyers/12"
     }

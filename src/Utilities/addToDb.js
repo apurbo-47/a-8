@@ -9,13 +9,13 @@ const getStoredLawyer = () => {
   }
 };
 
-const addToStoredDB = (id) => {
+const addToStoredDB = (lawId) => {
   const storedLawyerData = getStoredLawyer();
 
-  if (storedLawyerData.includes(id)) {
-    alert("This id already exists");
+  if (storedLawyerData.includes(lawId)) {
+    alert("This lawyer already booked you");
   } else {
-    storedLawyerData.push(id);
+    storedLawyerData.push(lawId);
     const data = JSON.stringify(storedLawyerData);
     localStorage.setItem("readList", data);
   }

@@ -1,90 +1,91 @@
-import { useEffect, useState } from "react";
-import { getStoredLawyer } from "../../Utilities/addToDb";
 import { useLoaderData } from "react-router";
-import Lawyer from "../Lawyer/Lawyer";
+import { getStoredLawyer } from "../../Utilities/addToDb";
+import { Bar, BarChart, XAxis, YAxis } from "recharts";
+import { useState } from "react";
 
 const ReadList = () => {
-  const [readList, setReadList] = useState([]);
-
-  const [sort, setSort] = useState("");
-
+  const [appointments, setAppointment] = useState([]);
   const data = useLoaderData();
 
-  useEffect(() => {
-    const storedLawyerData = getStoredLawyer();
-    const convertedStoredLawyer = storedLawyerData.map((id) => parseInt(id));
-    const myReadList = data.filter((lawyer) =>
-      convertedStoredLawyer.includes(lawyer.id),
+  // console.log("All lawyer: ", data);
+
+  // Get the lawyer ID from localstorage
+  const storedLawyerID = getStoredLawyer();
+
+  // get lawyer by ID
+
+  const getBookedLawyers = data?.lawyers?.filter((lawyer) =>
+    storedLawyerID.includes(lawyer.lawId),
+  );
+
+  console.log("Booked Lawyers: ", getBookedLawyers);
+
+  const law = getBookedLawyers;
+
+  // const convertedStoredLawyer = storedLawyerID.map((lawId) => parseInt(lawId));
+
+  // // const myReadList = data?.lawyers?.find((lawyer) =>
+  // //   convertedStoredLawyer.includes(lawyer.lawId),
+  // );
+
+  // const handleCancel = (lawId) => {
+  //   const remaining = appointments.filter(
+  //     (appointment) => appointment.lawId !== lawId,
+  //   );
+
+  //   setAppointments(remaining);
+  // };
+
+  const handleCancel = (lawId) => {
+    const remaining = appointments.filter(
+      (apointment) => apointment.lawId !== lawId,
     );
 
-    setReadList(myReadList);
-  }, []);
-
-  const handleSort = (type) => {
-    setSort(type);
-
-    if (type === "licenseNumber") {
-      const sortedByPages = [...readList].sort(
-        (a, b) => a.licenseNumber - b.licenseNumber,
-      );
-      setReadList(sortedByPages);
-    }
-
-    if (type === "experience") {
-      const sortedByRatings = [...readList].sort(
-        (a, b) => b.experience - a.experience,
-      );
-      setReadList(sortedByRatings);
-    }
+    setAppointment(remaining);
   };
 
   return (
     <div>
-      <Helmet>
-        <title>Read List Book</title>
-      </Helmet>
-      <div className="text-center p-5 ">
-        <details className="dropdown ">
-          <summary className="btn m-1 bg-green-400 border-hidden">
-            sort by : {sort ? sort : ""}
-          </summary>
-          <ul className="menu dropdown-content text-white bg-[#50B1C9] rounded-box z-1 w-52 p-2 shadow-sm">
-            <li>
-              <a onClick={() => handleSort("licenseNumber")}>Pages</a>
-            </li>
-            <li>
-              <a onClick={() => handleSort("experience")}>ratings</a>
-            </li>
-          </ul>
-        </details>
+      <div className="mt-12  max-w-7xl mx-auto ">
+        <BarChart width="full" height={400} responsive data={law}>
+          <XAxis dataKey="name" />
+          <YAxis dataKey="consultationFee" />
+          <Bar dataKey="consultationFee" fill="#8884d8"></Bar>
+        </BarChart>
       </div>
 
-      <Tabs>
-        <TabList>
-          <Tab>Read Book List</Tab>
-          <Tab>My Wish List</Tab>
-        </TabList>
+      <div>
+        <h3 className="text-2xl md:text-4xl font-extrabold text-[#0F0F0F] text-center mt-24">
+          My Today Appointments
+        </h3>
+        <p className="mx-2 text-xs md:text-base text-[#0F0F0F]/80 text-center mt-4">
+          Our platform connects you with verified, experienced Lawyers across
+          various specialties — all at your convenience.
+        </p>
+        <div>
+          {getBookedLawyers?.map((lawyer) => (
+            <div>
+              <div className="mx-2 md:mx-16 mt-16 border rounded-2xl border-[#141414]/15 p-4 md:p-8">
+                <h3 className="font-bold text-base   md:text-xl">
+                  {lawyer.lawId}. {lawyer.name}
+                </h3>
 
-        <TabPanel>
-          <h2 className="text-center p-5 font-bold text-xl">
-            Book i read : {readList.length}{" "}
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {readList.map((b) => (
-              <Lawyer key={b.id} singleLawyer={b}></Lawyer>
-            ))}
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <h2 className="text-center p-5 font-bold text-xl">My Wish List</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {readList.map((d) => (
-              <Lawyer key={d.id} singleLawyer={d}></Lawyer>
-            ))}
-          </div>
-        </TabPanel>
-      </Tabs>
+                <div className=" md:flex justify-between mt-4 text-[#141414]/60 font-medium text-sm md:text-lg">
+                  <p>{lawyer.speciality}</p>
+                  <p>Appointment Fee : {lawyer.consultationFee} Taka</p>
+                </div>
+                <div className=" mt-4 border border-[#141414]/15 "></div>
+                <button
+                  className=" py-3 mt-10 rounded-full w-full text-[#FF0000] font-bold border bg-white hover:text-white  hover:bg-[#FF0000]"
+                  onClick={() => handleCancel()}
+                >
+                  Cancel Appointment
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

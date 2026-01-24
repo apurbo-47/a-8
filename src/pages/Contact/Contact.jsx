@@ -13,7 +13,12 @@ const Contact = () => {
       <div className="hero-content text-neutral-content text-center">
         <div className="">
           <Link to="/">
-            <button className="btn btn-primary">Back To Home</button>
+            <button
+              className="btn bg-[#0EA106] text-white border-[#0EA106] hover:bg-white 
+            hover:text-[#0EA106] rounded-full"
+            >
+              Back To Home
+            </button>
           </Link>
         </div>
       </div>

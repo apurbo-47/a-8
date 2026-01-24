@@ -11,7 +11,7 @@ const Blog = () => {
         <summary className="collapse-title font-semibold">
           What is useState and how does it work in React?
         </summary>
-        <div className="collapse-content text-sm">
+        <div className="collapse-content text-xs md:text-sm">
           useState is a React Hook that lets you add and manage state in a
           functional component. useState allows a component to: Store a value
           (number, string, object, array, etc.) Update that value Re-render the
@@ -25,7 +25,7 @@ const Blog = () => {
         <summary className="collapse-title font-semibold">
           What is the purpose of useEffect in React?
         </summary>
-        <div className="collapse-content text-sm">
+        <div className="collapse-content text-xs md:text-sm">
           useEffect is a React Hook used to handle side effects in functional
           components. In short: 👉 useEffect lets you run code when something
           happens in the component lifecycle.
@@ -38,7 +38,7 @@ const Blog = () => {
         <summary className="collapse-title font-semibold">
           What is a custom hook in React and when should you use one?
         </summary>
-        <div className="collapse-content text-sm">
+        <div className="collapse-content text-xs md:text-sm">
           A custom hook in React is a reusable JavaScript function that lets you
           extract and share logic built with React Hooks (useState, useEffect,
           etc.) across multiple components.
@@ -52,7 +52,7 @@ const Blog = () => {
           Difference between controlled and uncontrolled components. Which one
           is better?
         </summary>
-        <div className="collapse-content text-sm">
+        <div className="collapse-content text-xs md:text-sm">
           A controlled component is one where React controls the form value
           using state (useState). User types, onChange fires, State updates,
           React re-renders with the new value.
@@ -65,7 +65,7 @@ const Blog = () => {
         <summary className="collapse-title font-semibold">
           Tell us something about useFormStatus() in React?
         </summary>
-        <div className="collapse-content text-sm">
+        <div className="collapse-content text-xs md:text-sm">
           useFormStatus() is a React Hook used with Server Actions (mainly in
           Next.js App Router) to track the submission state of a form.
         </div>

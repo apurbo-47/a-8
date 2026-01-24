@@ -22,7 +22,7 @@ const Services = () => {
               />
 
               <div className="flex text-2xl lg:text-4xl font-bold mt-4">
-                <CountUp end={199} duration={7}></CountUp>
+                <CountUp end={199} duration={12}></CountUp>
                 <p>+</p>
               </div>
 
@@ -40,7 +40,7 @@ const Services = () => {
               />
 
               <div className="flex text-2xl lg:text-4xl font-bold mt-4">
-                <CountUp end={467} duration={7}></CountUp>
+                <CountUp end={499} duration={12}></CountUp>
                 <p>+</p>
               </div>
 
@@ -58,7 +58,7 @@ const Services = () => {
               />
 
               <div className="flex text-2xl lg:text-4xl font-bold mt-4">
-                <CountUp end={1900} duration={7}></CountUp>
+                <CountUp end={1999} duration={12}></CountUp>
                 <p>+</p>
               </div>
 
@@ -76,7 +76,7 @@ const Services = () => {
               />
 
               <div className="flex text-2xl lg:text-4xl font-bold mt-4">
-                <CountUp end={300} duration={7}></CountUp>
+                <CountUp end={299} duration={12}></CountUp>
                 <p>+</p>
               </div>
 

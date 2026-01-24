@@ -2,14 +2,13 @@ import { Suspense } from "react";
 import Lawyer from "../Lawyer/Lawyer";
 
 const Lawyers = ({ data }) => {
-  console.log("data", data);
   return (
     <div className="max-w-7xl mx-auto px-5  space-y-8">
       <div className="text-center space-y-4">
-        <h1 className=" text-2xl md:text-4xl font-extrabold text-[#0F0F0F]">
+        <h1 className=" mt-20 text-2xl md:text-4xl font-extrabold text-[#0F0F0F]">
           Our Best Lawyers
         </h1>
-        <p className="text-[#0F0F0F]/80 mb-8">
+        <p className=" text-xs md:text-base text-[#0F0F0F]/80 mb-16">
           Our platform connects you with verified, experienced Lawyers across
           various specialties — all at your convenience. Whether it's a routine
           checkup or urgent consultation, book appointments in minutes and
@@ -24,7 +23,7 @@ const Lawyers = ({ data }) => {
         </div>
       </Suspense>
       <div className="text-center mt-8">
-        <button className=" px-7 py-4 font-bold border bg-[#0EA106] text-white rounded-full">
+        <button className=" px-7 py-4 font-bold border bg-[#0EA106] text-white rounded-full hover:text-[#0EA106] hover:border-[#0EA106] hover:bg-white  ">
           Show All Lawyer
         </button>
       </div>

@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="navbar-center flex justify-center mt-8 mb-8">
         <ul className="menu menu-horizontal text-base font-medium justify-center text-[#FFFFFF70] gap-8">
           <Link to="/">Home</Link>
-          <Link to="lawyerDetails/:id">My Bookings</Link>
+          <Link to="/readList">My Bookings</Link>
           <Link to="/blog">Blogs</Link>
           <Link to="/contact">Contact Us</Link>
         </ul>
@@ -30,10 +30,18 @@ const Footer = () => {
       <div className=" border border-dashed text-[#FFFFFF80] mb-8 "></div>
 
       <div className="flex justify-center gap-6 ">
-        <MdFacebook size={24} />
-        <FaInstagramSquare size={24} />
-        <FaYoutube size={24} />
-        <FaXTwitter size={24} />
+        <a href="/facebook">
+          <MdFacebook size={24} />
+        </a>
+        <a href="/instagram">
+          <FaInstagramSquare size={24} />
+        </a>
+        <a href="/youtube">
+          <FaYoutube size={24} />
+        </a>
+        <a href="/twitter">
+          <FaXTwitter size={24} />
+        </a>
       </div>
     </div>
   );
