@@ -9,7 +9,7 @@
       "licenseNumber": "LAW-BD-1001",
       "availability": "Sun - Thu (10 AM - 5 PM)",
       "consultationFee": 1500,
-      "image": "/images/lawyers/ahsan-rahman.jpg",
+      "image": "https://t4.ftcdn.net/jpg/02/95/96/79/360_F_295967926_T2nUnmhQc00dwwp3KsvJSPHMP2xhekry.jpg",
       "detailsPath": "/lawyers/1"
     },
     {
@@ -20,7 +20,7 @@
       "licenseNumber": "LAW-BD-1002",
       "availability": "Sat - Wed (9 AM - 4 PM)",
       "consultationFee": 1200,
-      "image": "/images/lawyers/nusrat-jahan.jpg",
+      "image": "https://i.ibb.co.com/S4C6vPdv/nussbaum-law-IOvs-EAEjn-DE-unsplash.jpg",
       "detailsPath": "/lawyers/2"
     },
     {
@@ -31,7 +31,7 @@
       "licenseNumber": "LAW-BD-1003",
       "availability": "Sun - Thu (11 AM - 6 PM)",
       "consultationFee": 2000,
-      "image": "/images/lawyers/mahmud-hasan.jpg",
+      "image": "https://i.ibb.co.com/whtmWC61/nussbaum-law-T4w6f2-Jrn-AM-unsplash.jpg",
       "detailsPath": "/lawyers/3"
     },
     {
@@ -42,7 +42,7 @@
       "licenseNumber": "LAW-BD-1004",
       "availability": "Mon - Fri (10 AM - 3 PM)",
       "consultationFee": 1300,
-      "image": "/images/lawyers/farzana-islam.jpg",
+      "image": "https://t4.ftcdn.net/jpg/06/21/27/53/360_F_621275364_Cw5k05NrXk7k30h6iM6wCIuph65HkoTR.jpg",
       "detailsPath": "/lawyers/4"
     },
     {
@@ -53,7 +53,7 @@
       "licenseNumber": "LAW-BD-1005",
       "availability": "Sun - Thu (9 AM - 2 PM)",
       "consultationFee": 1800,
-      "image": "/images/lawyers/shafiq-ahmed.jpg",
+      "image": "https://t3.ftcdn.net/jpg/00/69/90/62/360_F_69906272_95xqHEpDgZTq2MUBHKMUtO4vB3uyIxHI.jpg",
       "detailsPath": "/lawyers/5"
     },
     {
@@ -64,7 +64,7 @@
       "licenseNumber": "LAW-BD-1006",
       "availability": "Tue - Sat (11 AM - 5 PM)",
       "consultationFee": 1100,
-      "image": "/images/lawyers/tasnim-chowdhury.jpg",
+      "image": "https://media.gettyimages.com/id/514236016/photo/successful-business-woman-or-lawyer.jpg?s=612x612&w=gi&k=20&c=iIqIgg2NUBAtnyMv41pRUPRlgHEsYuSH1kaw54s81iA=",
       "detailsPath": "/lawyers/6"
     },
     {
@@ -75,7 +75,7 @@
       "licenseNumber": "LAW-BD-1007",
       "availability": "Sun - Thu (10 AM - 4 PM)",
       "consultationFee": 1700,
-      "image": "/images/lawyers/rezaul-karim.jpg",
+      "image": "https://media.istockphoto.com/id/853756428/photo/male-lawyer-in-office.jpg?s=612x612&w=0&k=20&c=norfUzXvg0PtNUWK7sVLC20l_IQtaI5AINypI5zor3g=",
       "detailsPath": "/lawyers/7"
     },
     {
@@ -86,7 +86,7 @@
       "licenseNumber": "LAW-BD-1008",
       "availability": "Mon - Fri (12 PM - 6 PM)",
       "consultationFee": 1400,
-      "image": "/images/lawyers/sadia-akter.jpg",
+      "image": "https://t3.ftcdn.net/jpg/03/61/33/48/360_F_361334857_UmFWD8FXB7sRjSLgkDMKTzyvubdjLVef.jpg",
       "detailsPath": "/lawyers/8"
     },
     {
@@ -97,7 +97,7 @@
       "licenseNumber": "LAW-BD-1009",
       "availability": "Sun - Thu (9 AM - 1 PM)",
       "consultationFee": 1600,
-      "image": "/images/lawyers/imran-hossain.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYENoDFzf9TyYDYe3HObcVr4LeTQVCWHTqw&s",
       "detailsPath": "/lawyers/9"
     },
     {
@@ -108,7 +108,7 @@
       "licenseNumber": "LAW-BD-1010",
       "availability": "Wed - Sun (10 AM - 4 PM)",
       "consultationFee": 1250,
-      "image": "/images/lawyers/rumana-siddique.jpg",
+      "image": "https://i.pinimg.com/736x/f2/bf/72/f2bf7206708230e9a8bea551ba14472e.jpg",
       "detailsPath": "/lawyers/10"
     },
     {
@@ -119,7 +119,7 @@
       "licenseNumber": "LAW-BD-1011",
       "availability": "Sun - Thu (11 AM - 5 PM)",
       "consultationFee": 1900,
-      "image": "/images/lawyers/kamal-uddin.jpg",
+      "image": "https://www.leanlaw.co/wp-content/uploads/1502076_LawyerStyleMen_Blog-Post-Hero-Image_1200X630_120522.png",
       "detailsPath": "/lawyers/11"
     },
     {
@@ -130,7 +130,7 @@
       "licenseNumber": "LAW-BD-1012",
       "availability": "Mon - Fri (9 AM - 2 PM)",
       "consultationFee": 1150,
-      "image": "/images/lawyers/nabila-rahman.jpg",
+      "image": "https://i.pinimg.com/736x/ff/45/a9/ff45a97aeb357ac281b6a2f54350d852.jpg",
       "detailsPath": "/lawyers/12"
     }
   ]
