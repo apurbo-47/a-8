@@ -4,7 +4,7 @@ import { Bar, BarChart, XAxis, YAxis } from "recharts";
 import { useState } from "react";
 
 const ReadList = () => {
-  const [appointments, setAppointment] = useState([]);
+  const [appointments, setAppointments] = useState([]);
   const data = useLoaderData();
 
   // console.log("All lawyer: ", data);
@@ -37,16 +37,15 @@ const ReadList = () => {
   // };
 
   const handleCancel = (lawId) => {
-    const remaining = appointments.filter(
-      (apointment) => apointment.lawId !== lawId,
+    const remaining = appointments?.filter(
+      (appointments) => appointments.lawId !== lawId,
     );
-
-    setAppointment(remaining);
+    setAppointments(remaining);
   };
 
   return (
     <div>
-      <div className="mt-12  max-w-7xl mx-auto ">
+      <div className="p-4 mt-12 max-w-7xl mx-auto ">
         <BarChart width="full" height={400} responsive data={law}>
           <XAxis dataKey="name" />
           <YAxis dataKey="consultationFee" />
