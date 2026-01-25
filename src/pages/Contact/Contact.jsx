@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router";
 
 const Contact = () => {
@@ -9,6 +10,9 @@ const Contact = () => {
         backgroundImage: "url(assets/shutterstock_1075475231.jpg)",
       }}
     >
+      <Helmet>
+        <title>Law.BD | Contact </title>
+      </Helmet>
       <div className="hero-overlay"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="">

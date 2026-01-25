@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLoaderData, useParams } from "react-router";
 import { addToStoredDB } from "../../Utilities/addToDb";
 import { ToastContainer, toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const LawyerDetails = () => {
   const { id } = useParams();
@@ -27,6 +28,9 @@ const LawyerDetails = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Law.BD | Lawyer Details </title>
+      </Helmet>
       <div>
         <div className=" border border-[#141414]/15 "></div>
 

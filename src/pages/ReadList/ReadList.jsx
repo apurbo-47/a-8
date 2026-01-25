@@ -1,18 +1,12 @@
 import { useLoaderData } from "react-router";
 import { getStoredLawyer, removeFromStoredDB } from "../../Utilities/addToDb";
 import { Bar, BarChart, XAxis, YAxis } from "recharts";
+import { Helmet } from "react-helmet";
 
 const ReadList = () => {
-  // const { id } = useParams();
-  // const lawId = parseInt(id);
   const data = useLoaderData();
 
-  // console.log("All lawyer: ", data);
-
-  // Get the lawyer ID from localstorage
   const storedLawyerID = getStoredLawyer();
-
-  // get lawyer by ID
 
   const getBookedLawyers = data?.lawyers?.filter((lawyer) =>
     storedLawyerID.includes(lawyer.lawId),
@@ -22,30 +16,15 @@ const ReadList = () => {
 
   const law = getBookedLawyers;
 
-  // const convertedStoredLawyer = storedLawyerID.map((lawId) => parseInt(lawId));
-
-  // // const myReadList = data?.lawyers?.find((lawyer) =>
-  // //   convertedStoredLawyer.includes(lawyer.lawId),
-  // );
-
-  // const handleCancel = (lawId) => {
-  //   const remaining = appointments.filter(
-  //     (appointment) => appointment.lawId !== lawId,
-  //   );
-
-  //   setAppointments(remaining);
-  // };
-
-  // Source - https://stackoverflow.com/q/50664632
-  // Posted by Abhishek Konnur, modified by community. See post 'Timeline' for change history
-  // Retrieved 2026-01-25, License - CC BY-SA 4.0
-
   const removeFromLocalStorage = (lawId) => {
     removeFromStoredDB(lawId);
   };
 
   return (
     <div>
+      <Helmet>
+        <title>Law.BD | My Bookings </title>
+      </Helmet>
       <div className="p-4 mt-12 max-w-7xl mx-auto">
         <BarChart width="full" height={400} responsive data={law}>
           <XAxis dataKey="name" />

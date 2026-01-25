@@ -1,8 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   return (
     <div className=" mt-10 p-6 ">
+      <Helmet>
+        <title>Law.BD | Blog</title>
+      </Helmet>
       <details
         className="collapse  border border-gray-300 mb-3"
         name="my-accordion-det-1"
