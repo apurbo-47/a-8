@@ -41,10 +41,10 @@ const LawyerDetails = () => {
           </p>
         </div>
 
-        <div className=" mx-2 md:mx-16 mt-8 border rounded-2xl border-[#141414]/15 flex items-center gap-4 md:gap-10  p-3 md :p-8 ">
+        <div className=" mx-2 md:mx-16 mt-8 border rounded-2xl border-[#141414]/15 flex items-center gap-4 md:gap-10  p-3 md:p-8 ">
           <img
             src={image}
-            className="w-24 h-40 md:w-[300px] md:h-[300px] md:rounded-2xl shadow-2xl bg-[#C4C4C4]"
+            className="w-24 h-40 md:w-75 md:h-75 md:rounded-xl "
           />
           <div>
             <h3 className="font-medium text-xs md:text-base mb-4 text-[#176AE5]">

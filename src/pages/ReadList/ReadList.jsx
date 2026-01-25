@@ -1,10 +1,10 @@
 import { useLoaderData } from "react-router";
-import { getStoredLawyer } from "../../Utilities/addToDb";
+import { getStoredLawyer, removeFromStoredDB } from "../../Utilities/addToDb";
 import { Bar, BarChart, XAxis, YAxis } from "recharts";
-import { useState } from "react";
 
 const ReadList = () => {
-  const [appointments, setAppointments] = useState([]);
+  // const { id } = useParams();
+  // const lawId = parseInt(id);
   const data = useLoaderData();
 
   // console.log("All lawyer: ", data);
@@ -36,16 +36,17 @@ const ReadList = () => {
   //   setAppointments(remaining);
   // };
 
-  const handleCancel = (lawId) => {
-    const remaining = appointments?.filter(
-      (appointments) => appointments.lawId !== lawId,
-    );
-    setAppointments(remaining);
+  // Source - https://stackoverflow.com/q/50664632
+  // Posted by Abhishek Konnur, modified by community. See post 'Timeline' for change history
+  // Retrieved 2026-01-25, License - CC BY-SA 4.0
+
+  const removeFromLocalStorage = (lawId) => {
+    removeFromStoredDB(lawId);
   };
 
   return (
     <div>
-      <div className="p-4 mt-12 max-w-7xl mx-auto ">
+      <div className="p-4 mt-12 max-w-7xl mx-auto">
         <BarChart width="full" height={400} responsive data={law}>
           <XAxis dataKey="name" />
           <YAxis dataKey="consultationFee" />
@@ -76,7 +77,7 @@ const ReadList = () => {
                 <div className=" mt-4 border border-[#141414]/15 "></div>
                 <button
                   className=" py-3 mt-10 rounded-full w-full text-[#FF0000] font-bold border bg-white hover:text-white  hover:bg-[#FF0000]"
-                  onClick={() => handleCancel()}
+                  onClick={() => removeFromLocalStorage(lawyer.lawId)}
                 >
                   Cancel Appointment
                 </button>

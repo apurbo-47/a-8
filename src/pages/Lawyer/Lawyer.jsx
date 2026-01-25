@@ -8,8 +8,12 @@ const Lawyer = ({ singleLawyer }) => {
   return (
     <div className="">
       <div className="flex items-center shadow-lg p-6 gap-6 md:gap-x-16  rounded-2xl ">
-        <div className=" bg-[#F3F3F3] rounded-2xl h-[160px] w-[160px] ">
-          <img className="w-full h-full object-cover" src={image} alt="Shoes" />
+        <div className="h-40 w-40">
+          <img
+            className="rounded-xl w-full h-full object-cover"
+            src={image}
+            alt="Shoes"
+          />
         </div>
         <div className="space-y-2 w-[65%]">
           <h3 className="font-medium md:text-base text-[#23BE0A]">

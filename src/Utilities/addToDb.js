@@ -20,5 +20,16 @@ const addToStoredDB = (lawId) => {
     localStorage.setItem("readList", data);
   }
 };
+const removeFromStoredDB = (lawId) => {
+  console.log("lawid:", lawId);
+  const storedLawyerData = getStoredLawyer();
+  console.log("stored data: ", storedLawyerData);
 
-export { addToStoredDB, getStoredLawyer };
+  const removedData = storedLawyerData?.filter((id) => id !== lawId);
+  console.log("object: ", removedData);
+
+  const data = JSON.stringify(removedData);
+  localStorage.setItem("readList", data);
+};
+
+export { addToStoredDB, getStoredLawyer, removeFromStoredDB };
